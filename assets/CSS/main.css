@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://wp.alithemes.com/html/monst/react/landing/assets/imgs/backgrounds/intersect.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.header{
+    height: 60vh;
+}
+.navbar{
+    margin-left: 0;
+    position: fixed;
+    padding-top: 0;
+width: 100%;
+z-index: 10000;
+background-color: white;
+}
+.navbar-brand{
+    padding-left: 150px;
+}
+.navbar-nav{
+    position: relative;
+    margin:0px 200px ;
+    width: 100%;
+}
+li{
+    padding: 10px;
+}
+.dropdown-menu{
+    padding: 20px;
+}
+.dropdown:hover .dropdown-menu{
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+}
+.none{
+    display: none;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+    color: rgba(30, 41, 59, 0.71);
+    font-weight: bold;
+}
+button{
+    padding: 10px ;
+    border-radius: 10px;
+    font-size: 13.5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: all .2s;
+}
+.btn1{
+border: 1px solid rgba(96, 165, 250, 0.416);
+color: rgba(96, 165, 250);
+background-color: white;
+margin-right: 20px;
+position: absolute;
+top:15px;
+left: 75%;
+}
+.btn1:hover{
+    top:13px;
+    color: rgb(0, 0, 141);
+}
+.btn2{
+border: 0;
+background-color: rgba(96, 165, 250);
+color: white;
+position: absolute;
+top:15px;
+left: 90%;
+}
+.btn2:hover{
+    top:13px;
+    background-color: rgb(45, 104, 176);
+}
+
+.home {
+    height: 50vh;
+    text-align: center;
+    margin: auto;
+    width: 70%;
+    padding-top: 130px;
+}
+.home h1{
+    font-weight: bold;
+    font-size: 55px;
+}
+.home p{
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.498);
+}
+.button{
+position: relative;
+margin-left: 40px;
+}
+.home button{
+    padding: 12px 28px;
+    border: 0;
+    font-weight:500;
+}
+.home .btn1{
+    background-color: rgba(96, 165, 250);
+    color: white;
+    position: absolute;
+    top:3px;
+left: 30%;
+}
+.home .btn1:hover{
+top:0px;
+background-color: rgb(45, 104, 176);
+}
+.home .btn2{
+    background-color:white;
+    color: gray;
+    position: absolute;
+    top:3px;
+left: 47%;
+}
+.home .btn2:hover{
+    top:0px;
+    color: rgb(66, 64, 64);
+    }
+    .section1{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(https://wp.alithemes.com/html/monst/react/landing/assets/imgs/elements/pattern.png);
+        background-size: contain;
+    }
+.main .section1 img{
+    margin-left: 300px;
+    animation-name: animate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+z-index: 500;
+position: absolute;
+}
+.row{
+    margin: 0;
+}
+.crd{
+    padding: 0;
+}
+.card{
+    border: 0;
+}
+.main .section2 {
+    width: 80%;
+    margin: auto;
+}
+.card .card-body h5{
+    font-weight: bold;
+    color: rgba(96, 165, 250);
+    }
+    .card .card-body p{
+        color: rgba(66, 64, 64, 0.6);
+        font-size: 14px;
+    }
+    .section3{
+        width: 100%;
+        margin-top: 70px;
+        padding-top: 70px;
+    }
+    .section3 .row{
+        width: 80%;
+        margin: auto;
+    }
+    .section3 h2{
+        font-weight: bolder;
+        color: rgb(40, 137, 255);
+    }
+    .section3 p{
+font-size: 16px;
+    }
+    .section3 .row .paragraph{
+        margin-left: 25%;
+        color: rgba(0, 0, 0, 0.361);
+    }
+    .section3 .row .paragraph p{
+        font-size: 19px;
+    }
+    .section3 .row .card{
+        text-align: center;
+    }
+    .footer{
+        position: relative;
+        height: 40vh;
+    }
+    .footer a{
+        padding-left: 0;
+    }
+    .footer .button{
+        border: 0;
+background-color: rgba(96, 165, 250);
+color: white;
+position: absolute;
+        top:45%;
+        left:45%;  
+    }
+    .footer .button:hover{
+        top:43%;
+        background-color: rgb(45, 104, 176);
+    }
+    .footer .p{
+        font-size: 20px;
+        text-align: center;
+        color: rgba(128, 128, 128, 0.671);
+        margin-bottom: 70px;
+    }
+@keyframes animate{
+    0%{
+      top:60px;  
+      }
+      50%{
+          top:100px;
+      }
+      100%{
+          top:60px; 
+      }
+    }
+    @media(max-width:750px) {
+        .navbar-brand{
+            padding-left: 10px;
+        }
+        .navbar-nav{
+            margin:0px 20px ;
+            height: 40vh;
+        }
+        .collapse .btn1{
+            display: none;
+        }
+            .collapse .btn2{
+                display: none;
+
+            }
+            .home {
+                width: 97%;
+            }
+            .home h1{
+    font-size: 33px;
+}
+            .home p{
+    font-size: 15px;
+}
+.home .btn1{
+    position: absolute;
+    top:3px;
+left: 20%;
+}
+.home .btn1:hover{
+top:0px;
+}
+.home .btn2{
+    border: 1px solid rgba(128, 128, 128, 0.416);
+    position: absolute;
+    top:60px;
+left: 19%;
+}
+.home .btn2:hover{
+    top:55px;
+    }
+    .main .section1{
+        height: 50vh;
+    }
+    .main .section1 img{
+        width: 100%;
+        margin-left: 0px;
+    }
+     }
+     .section3 .row .paragraph{
+        margin-left: 0;
+        color: rgba(0, 0, 0, 0.361);
+    }
+    .footer a{
+        margin-right: 0px;
+    }
+    .footer .button{
+        top:55%;
+        left:28%;
+    }
+    .footer .button:hover{
+        top:53%;
+    }
+     @media(max-width:960px) {
+        .navbar-brand{
+            padding-left: 10px;
+        }
+        .collapse .btn1{
+            display: none;
+        }
+            .collapse .btn2{
+                display: none;
+
+            }
+            .home {
+                width: 97%;
+            }
+            .home h1{
+    font-size: 33px;
+}
+            .home p{
+    font-size: 15px;
+}
+.home .btn1{
+    position: absolute;
+    top:3px;
+left: 35%;
+}
+.home .btn1:hover{
+top:0px;
+}
+.home .btn2{
+    border: 1px solid rgba(128, 128, 128, 0.416);
+    position: absolute;
+    top:60px;
+left: 35%;
+}
+.home .btn2:hover{
+    top:55px;
+    }
+    .main .section1{
+        height: 80vh;
+    }
+    .main .section1 img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .section3 .row .paragraph{
+        margin-left: 0;
+        color: rgba(0, 0, 0, 0.361);
+    }
+
+     }
+     
+
